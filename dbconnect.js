@@ -1,7 +1,6 @@
-const { config } = require('./dbconfig')
 const mysql = require('mysql2')
 
-const connection = () => {
+const connection = (config) => {
   return mysql.createPool(config).promise()
 }
 
