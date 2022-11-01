@@ -5,7 +5,10 @@ const config = {
   port: MYSQL_PLUS_PORT,
   user: MYSQL_PLUS_USER,
   password: MYSQL_PLUS_PASSWORD,
-  database: MYSQL_PLUS_DATABASE
+  database: MYSQL_PLUS_DATABASE,
+  enableKeepAlive: true,
+  waitForConnections: true,
+  keepAliveInitialDelay: 10000,
 }
 
 module.exports = { config }

@@ -1,7 +1,8 @@
 const cron = require('node-cron')
 
-cron.schedule('0 59 * * * *', async () => {
+cron.schedule('*/20 * * * * *', async () => {
   console.log('test')
 })
+
 
 console.log(`app started ${new Date()}`)
