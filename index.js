@@ -1,7 +1,8 @@
 const cron = require('node-cron')
+const { Example } = require('./schedule.example')
 
 cron.schedule('*/20 * * * * *', async () => {
-  console.log('test')
+  Example()
 })
 
 
